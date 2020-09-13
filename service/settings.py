@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '*_-8y!ijl8vw8i1%-j@cw0znk&ec7oucj1kv!!q(s9cq)cfu3j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['desolate-badlands-42848.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 AUTH_SERVICE_BASE_URL = 'http://127.0.0.1:8000/' if DEBUG else 'https://polar-shelf-60214.herokuapp.com/'
 STATISTIC_SERVICE_BASE_URL = 'http://127.0.0.1:8004/'
 DANCERS_SERVICE_BASE_URL = 'http://127.0.0.1:8001/' if DEBUG else 'https://fierce-plains-12493.herokuapp.com/'
-CLUBS_SERVICE_BASE_URL = 'http://127.0.0.1:8002/'
+CLUBS_SERVICE_BASE_URL = 'http://127.0.0.1:8002/' if DEBUG else 'https://secure-brook-79251.herokuapp.com/'
 
 SERVICE_ID = 'Competitions'
 SERVICE_SECRET = 'qwerty'
