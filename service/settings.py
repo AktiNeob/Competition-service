@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '*_-8y!ijl8vw8i1%-j@cw0znk&ec7oucj1kv!!q(s9cq)cfu3j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['desolate-badlands-42848.herokuapp.com', '127.0.0.1']
 
@@ -165,7 +165,7 @@ LOGGING = {
     }
 }
 
-ORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
